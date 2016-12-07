@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout 
+        android:id="@+id/dangerAssessmentsParts"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+        <LinearLayout 
+        	android:id="@+id/dangerCategories"
+        	android:layout_weight="3"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical">       
+    	</LinearLayout>
+    	<LinearLayout 
+        	android:id="@+id/dangerWorkspace"
+        	android:layout_weight="1"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="vertical">       
+    	</LinearLayout>
+    </LinearLayout>   
+</LinearLayout>

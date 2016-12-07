@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/workplace_edit_edit" 
+       	  android:title="@string/edit"
+       	  android:showAsAction="always"
+       	  android:icon="@drawable/ic_menu_edit"/>              
+    <item android:id="@+id/workplace_edit_copy" 
+          android:title="@string/copy"
+          android:showAsAction="always"
+       	  android:icon="@drawable/ic_menu_copy"/>
+    <item android:id="@+id/workplace_edit_delete" 
+          android:title="@string/delete"
+          android:showAsAction="always"
+       	  android:icon="@drawable/ic_menu_discard"/>
+    <item android:id="@+id/workplace_edit_save" 
+          android:title="@string/save"
+          android:showAsAction="always"
+       	  android:icon="@drawable/ic_menu_save"/>
+	<item android:id="@+id/workplace_edit_cancel"
+	      android:title="@string/cancel"
+	      android:icon="@drawable/ic_menu_cancel"
+	      android:showAsAction="always"/>
+</menu>

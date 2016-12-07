@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WoRiAs</string>
+    <string name="title_company_detail">Company Detail</string>
+    <string name="workplace_definition">Arbeitsplatzabgrenzung</string>
+    <string name="workplace_name">Arbeitsplatzname</string>
+    <string name="workplace_name_in_company">Betriebsinterne Nummer</string>
+    <string name="workplace_description">Arbeitsplatzbeschreibung</string>
+    <string name="possible_dangers">Mögliche Gefahren</string>
+    <string name="save">Speichern</string>
+    <string name="welcome">Willkommen bei WoRiAs</string>
+    <string name="company_selection">Unternehmensauswahl</string>
+    <string name="alter">Ändern</string>
+    <string name="danger_description_button">Gefährdungsbeschreibung</string>
+    <string name="danger_risk_description_button">Beschreibung/Risikobewertung</string>
+    <string name="danger_protection_button">Schutzziele/Maßnahmen</string>
+    <string name="danger_risk_description">Gefährdungsbeschreibung</string>
+     <string name="danger_risk_assessment">Risikobewertung</string>
+    <string name="take_photos">Fotos schießen</string>
+    <string name="imagebtn_info">Klick zum Bild aufnehmen</string>
+    <string name="image">Bild</string>
+    <string name="protection_goals">Schutzziele</string>
+    <string name="protection_goal">Schutzziel</string>
+    <string name="protection_goal_save">Schutzziel speichern</string>
+    <string name="protection_actions">Maßnahmen</string>
+    <string name="protection_action">Maßnahme</string>
+    <string name="protection_action_save">Maßnahme speichern</string>
+    <string name="protection_done">Fertig</string>
+    <string name="protection_responsible">Verantwortlicher</string>
+    <string name="protection_appointment">Termin</string>
+    <string name="danger_positive_answer">Ja</string>
+    <string name="danger_negative_answer">Nein</string>
+    <string name="danger_question_noneed">Kein Handlungsbedarf</string>
+    <string name="danger_question_need">Handlungsbedarf</string>
+    <string name="danger_question_newthreat">Neue Gefährdung</string>
+    <string name="select_get">Daten vom Server abrufen</string>
+    <string name="select_send">Daten auf Server schreiben</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="danger_risk_save">Gefährdung speichern</string>
+    <string name="copy">Kopieren</string>
+    <string name="delete">Löschen</string>
+    <string name="setting">Einstellungen</string>
+</resources>

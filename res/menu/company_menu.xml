@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/company_abort" 
+        android:title="@string/cancel" />
+    <item
+        android:id="@+id/company_settings"
+        android:title="@string/setting"/>
+    <item 
+        android:id="@+id/company_snyc" 
+        android:title="@string/select_get"/>
+        <item 
+        android:id="@+id/company_send" 
+        android:title="@string/select_send"/>
+</menu>

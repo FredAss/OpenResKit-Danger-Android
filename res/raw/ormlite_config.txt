@@ -1,0 +1,465 @@
+#
+# generated on 2014/04/07 05:11:47
+#
+# --table-start--
+dataClass=openreskit.danger.models.Action
+tableName=actions
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Description
+# --field-end--
+# --field-start--
+fieldName=Person
+columnName=person_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=DueDate
+# --field-end--
+# --field-start--
+fieldName=Effect
+# --field-end--
+# --field-start--
+fieldName=Execution
+# --field-end--
+# --field-start--
+fieldName=Threat
+columnName=threat_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Activity
+tableName=activitys
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Workplace
+columnName=workplace_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Assessment
+tableName=assessments
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Workplace
+columnName=workplace_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=AssessmentDate
+columnName=AssessmentDate
+dataPersister=DATE
+# --field-end--
+# --field-start--
+fieldName=Threats
+columnName=threat_id
+foreignCollection=true
+foreignCollectionColumnName=threat_id
+# --field-end--
+# --field-start--
+fieldName=EvaluatingPerson
+columnName=person_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Status
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Category
+tableName=categorys
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Surveytype
+columnName=surveytype_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=GFactor
+columnName=gfactor_id
+foreignCollection=true
+foreignCollectionColumnName=gfactor_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Company
+tableName=companys
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Adress
+# --field-end--
+# --field-start--
+fieldName=Telephone
+# --field-end--
+# --field-start--
+fieldName=TypeOfBusiness
+# --field-end--
+# --field-start--
+fieldName=Workplace
+columnName=workplace_id
+foreignCollection=true
+foreignCollectionColumnName=workplace_id
+# --field-end--
+# --field-start--
+fieldName=Person
+columnName=person_id
+foreignCollection=true
+foreignCollectionColumnName=person_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Dangerpoint
+tableName=dangerpoints
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Gfactor
+columnName=gfactor_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.GFactor
+tableName=gFactors
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=Number
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Category
+columnName=category_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Question
+columnName=question_id
+foreignCollection=true
+foreignCollectionColumnName=question_id
+# --field-end--
+# --field-start--
+fieldName=Dangerpoints
+columnName=dangerpoints_id
+foreignCollection=true
+foreignCollectionColumnName=dangerpoints_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Person
+tableName=persons
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Company
+columnName=company_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Picture
+tableName=pictures
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Pic
+# --field-end--
+# --field-start--
+fieldName=Threat
+columnName=threat_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.ProtectionGoal
+tableName=protectionGoals
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Description
+# --field-end--
+# --field-start--
+fieldName=Threat
+columnName=threat_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Question
+tableName=questions
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=questionName
+# --field-end--
+# --field-start--
+fieldName=Gfactor
+columnName=gfactor_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Surveytype
+tableName=surveytypes
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=Category
+columnName=category_id
+foreignCollection=true
+foreignCollectionColumnName=category_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Threat
+tableName=threats
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Description
+# --field-end--
+# --field-start--
+fieldName=RiskDimension
+# --field-end--
+# --field-start--
+fieldName=RiskPossibility
+# --field-end--
+# --field-start--
+fieldName=Status
+# --field-end--
+# --field-start--
+fieldName=Actionneed
+# --field-end--
+# --field-start--
+fieldName=Assessment
+columnName=assessment_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=GFactor
+columnName=gfactor_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Dangerpoint
+columnName=dangerpoint_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Activity
+columnName=activity_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Pictures
+columnName=picture_id
+foreignCollection=true
+foreignCollectionColumnName=picture_id
+# --field-end--
+# --field-start--
+fieldName=ProtectionGoals
+columnName=protectiongoal_id
+foreignCollection=true
+foreignCollectionColumnName=protectiongoal_id
+# --field-end--
+# --field-start--
+fieldName=Actions
+columnName=action_id
+foreignCollection=true
+foreignCollectionColumnName=action_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=openreskit.danger.models.Workplace
+tableName=workplaces
+# --table-fields-start--
+# --field-start--
+fieldName=Id
+id=true
+# --field-end--
+# --field-start--
+fieldName=ServerId
+# --field-end--
+# --field-start--
+fieldName=Name
+# --field-end--
+# --field-start--
+fieldName=NameCompany
+# --field-end--
+# --field-start--
+fieldName=Description
+# --field-end--
+# --field-start--
+fieldName=Company
+columnName=company_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=SurveyType
+columnName=surveytype_id
+foreign=true
+foreignAutoRefresh=true
+foreignAutoCreate=true
+# --field-end--
+# --field-start--
+fieldName=Assessments
+columnName=assessment_id
+foreignCollection=true
+foreignCollectionColumnName=assessment_id
+# --field-end--
+# --field-start--
+fieldName=Activities
+columnName=activity_id
+foreignCollection=true
+foreignCollectionColumnName=activity_id
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

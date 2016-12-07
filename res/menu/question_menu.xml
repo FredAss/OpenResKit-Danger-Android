@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/question_new_threat"
+        android:title="@string/danger_question_newthreat"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_add">
+    </item>
+    
+    <item
+        android:id="@+id/question_noneed"
+        android:title="@string/danger_question_noneed"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_noneed">
+    </item>
+
+    <item
+        android:id="@+id/question_need"
+        android:title="@string/danger_question_need"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_need">
+    </item>
+    
+</menu>

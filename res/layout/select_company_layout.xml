@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+
+       <TextView
+        android:id="@+id/companySelection_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/sectionHeader_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/companySelection_TextView"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/company_selection"
+        android:textSize="28sp" />
+    
+    <ListView
+        android:id="@+id/company_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sectionHeader_TextView"
+        android:layout_below="@+id/sectionHeader_TextView"
+        android:layout_marginTop="28dp" />
+
+</RelativeLayout>

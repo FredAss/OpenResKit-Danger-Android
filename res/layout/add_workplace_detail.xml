@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:background="#0099CC"
+        android:paddingBottom="20sp"
+        android:paddingLeft="10sp"
+        android:paddingTop="20sp"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:text="@string/workplace_definition"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/addWorkplaceName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/workplace_name"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/addWorkplaceNameCompany"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/workplace_name_in_company"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addWorkplaceDescribtion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:hint="@string/workplace_description"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            
+            <EditText
+                android:id="@+id/ActivityName"
+                android:layout_width="wrap_content"
+                android:layout_weight="15"
+                android:layout_height="match_parent"
+                android:hint="Tätigkeit" />
+            
+            <Button 
+                android:id="@+id/AddActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"/>
+
+        </LinearLayout>
+        
+        <ListView 
+            android:id="@+id/ActivityList"
+            android:layout_width="match_parent"
+            android:layout_height="50px"/>
+        
+        <Spinner
+            android:id="@+id/SurveytypeAddSelection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+   
+
+</LinearLayout>

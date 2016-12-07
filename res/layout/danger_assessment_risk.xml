@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_weight="2"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33B5E5"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:text="@string/danger_risk_description"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+ <FrameLayout
+    		android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            
+    	 <ImageButton
+                android:id="@+id/TakeImage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/take_photos"
+                android:textSize="20sp"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true" 
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginLeft="5sp"
+                android:background="@drawable/border_list"
+                android:layout_marginRight="2.5sp" />
+    	 <TextView
+    	    android:id="@+id/TakeImageDefaultText"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/imagebtn_info"
+            android:textColor="#A4A4A4"
+            android:clickable="false" 
+            android:textSize="20sp" />
+</FrameLayout>
+	
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/ThreatDescription"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3" />
+                
+                <Spinner
+                    android:id="@+id/ActivitiesOfWorkplace"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"/>
+                
+                <Spinner
+                    android:id="@+id/DangerpointsOfGfactor"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"/>
+
+                <openreskit.danger.ui.HorizontialListView
+                    android:id="@+id/testView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" 
+                    android:background="@drawable/border_list"
+                    android:layout_marginBottom="5sp"   
+                    android:layout_marginLeft="2.5sp"
+                    android:layout_marginRight="5sp"/>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:layout_weight="5"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33B5E5"
+            android:paddingBottom="10sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="5sp"
+            android:text="@string/danger_risk_assessment"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5sp"
+       		android:layout_marginLeft="5sp"
+        	android:layout_marginRight="5sp"
+        	android:layout_marginTop="5sp"
+        	android:layout_weight="3"
+        	android:orientation="horizontal" 
+            >
+		
+            <Spinner
+                android:id="@+id/ThreatPossibility"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/ThreatDimension"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            
+            <TextView
+                android:id="@+id/RiskGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_weight="1"
+                android:textAlignment="center" />
+            
+        </LinearLayout>
+        
+             
+    </LinearLayout>
+
+</LinearLayout>
